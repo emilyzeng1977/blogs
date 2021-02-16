@@ -6,6 +6,7 @@
 - Cluster IP: Service的IP地址，为虚拟IP地址
 
 #### Node IP
+
 ```markdown
 # kubectl describe node master1 | grep InternalIP
   InternalIP:  10.151.30.11
@@ -14,6 +15,7 @@
 ```
 
 #### Pod IP
+
 ```markdown
 apiVersion: v1
 kind: Pod
