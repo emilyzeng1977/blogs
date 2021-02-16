@@ -6,7 +6,7 @@ kubectl expose deployment deploy-nginx-demo --name=service-nginx-demo --port=909
 ```
 ```markdown
 1. deploy-nginx-demo 为指定的service对象名称
-2. --port指定集群内部访问的端口 ???
+2. --port指定集群内部访问的端口service端口
 3. --target-port指定容器内跑服务的端口
 4. --type=NodePort 指定类型 集群外部访问
 5. –dry-run表示测试不在k8s运行（不会具体执行该命令）
