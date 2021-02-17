@@ -79,4 +79,9 @@ abb111a24d66   debian                 "/bin/sh -c 'while t…"   4 hours ago   U
 
 ### 三种IP网络间的通信
 service地址和pod地址在不同网段，service地址为虚拟地址，不配在pod上或主机上，外部访问时，先到Node节点网络，再转到service网络，最后代理给pod网络
+```markdown
+node不可以PING pod及Cluster
+pod间可以相互PING
+pod可以PINGCluster
+```
 ![Image](img/01/1.png)
