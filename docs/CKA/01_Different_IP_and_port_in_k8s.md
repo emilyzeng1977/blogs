@@ -84,4 +84,3 @@ node不可以PING pod及Cluster
 pod间可以相互PING
 pod可以PINGCluster
 ```
-![Image](img/01/1.png)

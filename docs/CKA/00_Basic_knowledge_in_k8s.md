@@ -16,3 +16,6 @@ k8s有两类资源，分别是master和node。
 2. pod是临时性的，用完即丢弃的，当pod中的进程结束、node故障，或者资源短缺时，pod会被干掉。基于此，用户很少直接创建一个独立的pods，而会通过k8s中的controller来对pod进行管理。
 controller通过pod templates来创建pod，pod template是一个静态模板，创建出来之后的pod就跟模板没有关系了，模板的修改也不会影响现有的pod。
 
+#### service
+
+由于pod是临时性的，pod的ip:port也是动态变化的。这种动态变化在k8s集群中就涉及到一个问题：如果一组后端pod作为服务提供方，供一组前端的pod所调用，那服务调用方怎么自动感知服务提供方。这就引入了k8s中的另外一个核心概念，services.
