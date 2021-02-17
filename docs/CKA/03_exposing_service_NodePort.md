@@ -15,7 +15,7 @@ kubectl expose deployment deploy-nginx-demo --name=service-nginx-demo --port=909
 6. -o yaml 生成yaml格式
 7. 最后面的 “> deploy.yaml” 表示将生成yaml内容输出到deploy.yaml文件
 ```
-
+### Create and check Service
 ```markdown
 # kubectl get services
 NAME                 TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE   SELECTOR
@@ -39,6 +39,7 @@ Session Affinity:         None
 External Traffic Policy:  Cluster
 Events:                   <none>
 ```
+### 集群外请求访问
 ### k8s集群内外的访问方式
 ```markdown
 NodeIP:NodePort             // 通过这个方法可以在k8s集群外访问
