@@ -1,6 +1,8 @@
-## Three ways to expose service
-https://blog.csdn.net/qq_21187515/article/details/112363072
+## NodePort
+将服务的类型设置成NodePort
+- 每个集群节点在节点本身（因此得名叫NodePort)上打开一个端口，并将在该端口上接收到的流量重定向到一个Service, 该Service仅在内部集群可访问。
 
+### Create Service YAML file
 ```markdown
 kubectl expose deployment deploy-nginx-demo --name=service-nginx-demo --port=9090 --target-port=80 --type=NodePort -o yaml --dry-run=client > service-nginx-demo.yaml
 ```
@@ -37,7 +39,7 @@ Session Affinity:         None
 External Traffic Policy:  Cluster
 Events:                   <none>
 ```
-k8s集群内外不通的访问方式
+### k8s集群内外的访问方式
 ```markdown
 NodeIP:NodePort             // 通过这个方法可以在k8s集群外访问
 POD IP:80                   // 只能在POD内部访问
