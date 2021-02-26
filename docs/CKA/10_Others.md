@@ -7,9 +7,10 @@ https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/
 
 ### 02 Task
 #### cordon
+https://kubernetes.io/zh/docs/concepts/architecture/nodes/
 - 将一个节点标识为不可调度 (STATUS from Ready -> SchedulingDisabled)
 - 用uncordon恢复
-https://kubernetes.io/zh/docs/concepts/architecture/nodes/
+
 
 ```markdown
 kubectl cordon node's name
