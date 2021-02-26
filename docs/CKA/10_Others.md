@@ -51,3 +51,5 @@ kubectl scale deployment.v1.apps/nginx-deployment --replicas=10
 or
 kubectl scale deployment nginx-deployment --replicas=10
 ```
+## 09 Task
+https://kubernetes.io/docs/tasks/configure-pod-container/assign-pods-nodes/  
