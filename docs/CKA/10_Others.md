@@ -22,5 +22,7 @@ https://kubernetes.io/zh/docs/tasks/administer-cluster/safely-drain-node/
 - 通常用于在对节点执行维护之前执行
 
 ```markdown
-kubectl drain node's name --delete-local-data --ignore-daemonsets --force
+kubectl drain --help
+              --ignore-daemonsets=false: Ignore DaemonSet-managed pods.
+kubectl drain node's name --ignore-daemonsets --force
 ```
