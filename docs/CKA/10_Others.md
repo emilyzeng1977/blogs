@@ -28,7 +28,26 @@ kubectl drain --help
 kubectl drain node's name --ignore-daemonsets --force
 ```
 ## 08 Task
-Scale the deployment presentation to 3 pods  
-abc  
-https://kubernetes.io/docs/concepts/workloads/controllers/deployment/  
-
+Scale the deployment nginx-deployment to 10 pods  
+https://kubernetes.io/docs/concepts/workloads/controllers/deployment/ 
+测试环境的准备工作 
+```markdown
+kubectl apply -f https://k8s.io/examples/controllers/nginx-deployment.yaml
+```
+方法1 
+```markdown
+kubectl get deployment nginx-deployment -o yaml > nginx-deployment.yaml
+vi change replicas to 10
+kubectl apply -f nginx-deployment.yaml
+```
+方法2  
+```markdown
+kubectl edit deployment nginx-deployment
+change replicas to 10 and then save
+```
+方法3 (推荐)  
+```markdown
+kubectl scale deployment.v1.apps/nginx-deployment --replicas=10
+or
+kubectl scale deployment nginx-deployment --replicas=10
+```
