@@ -27,3 +27,8 @@ kubectl drain --help
               --ignore-daemonsets=false: Ignore DaemonSet-managed pods.
 kubectl drain node's name --ignore-daemonsets --force
 ```
+## 08 Task
+Scale the deployment presentation to 3 pods  
+abc  
+https://kubernetes.io/docs/concepts/workloads/controllers/deployment/  
+
