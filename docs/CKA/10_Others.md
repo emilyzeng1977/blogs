@@ -66,4 +66,7 @@ echo 1 > 制定文件
 ```
 ## 12 Persistent volume
 https://kubernetes.io/zh/docs/tasks/configure-pod-container/configure-persistent-volume-storage/  
+请先学习这个例子
 
+## 13 Persistent volume Claim
+https://kubernetes.io/zh/docs/tasks/configure-pod-container/configure-persistent-volume-storage/  
