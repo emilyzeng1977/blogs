@@ -53,3 +53,17 @@ kubectl scale deployment nginx-deployment --replicas=10
 ```
 ## 09 Task
 https://kubernetes.io/docs/tasks/configure-pod-container/assign-pods-nodes/  
+```markdown
+Find a template from the above link and change the related fields
+```
+## 10 Tast
+```markdown
+[root@master3 vagrant]# kubectl get nodes | grep -i ready | wc -l
+2
+[root@master3 vagrant]# kubectl get nodes | grep -i NotReady | wc -l
+1
+echo 1 > 制定文件
+```
+## 12 Persistent volume
+https://kubernetes.io/zh/docs/tasks/configure-pod-container/configure-persistent-volume-storage/  
+
