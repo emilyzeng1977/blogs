@@ -4,6 +4,8 @@ https://www.zze.xyz/archives/linux-update-kernel.html
 
 https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/
 
+### 01 clusterRole
+https://kubernetes.io/docs/reference/access-authn-authz/rbac/  
 
 ### 02 Task
 #### cordon
